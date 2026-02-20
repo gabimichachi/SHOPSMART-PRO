@@ -62,11 +62,11 @@ function juros() {
         `
         <h2>Total do Juros</h2>
         <ul>
-            <p>JUROS</p>
-            <p>Valor 01: ${valor01}</p>
-            <p>Valor 02: ${valor02}</p>
-            <p>Valor do juros ${acrescimo}</p>
-            <p>Valor final: ${total}</p>
+            <li>JUROS</p>
+            <li>Valor 01: ${valor01}</li>
+            <li>Valor 02: ${valor02}</li>
+            <li>Valor do juros ${acrescimo}</li>
+            <li>Valor final: ${total}</li>
         </ul>
         `;
 };
@@ -124,6 +124,7 @@ function lucro(){
 
 ////////////////////////// function limpar ////////////////////////////////
 function limpar() {
+    document.getElementById('resultado').style.display = 'none';
     document.getElementById('valor01').value = '';
     document.getElementById('valor02').value = '';
 
