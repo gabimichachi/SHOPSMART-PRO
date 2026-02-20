@@ -15,10 +15,10 @@ function calcularTotal (){
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = 
     `
-    <h2>Você irá pagar um valor total de ${total}</h2>
+    <h2>Total da Compra</h2>
     <ul>
-        <p>uma vez que o preço é ${valor01} e a quantidade de coisas foram ${valor02}</p>
-    </ul>
+    <li> Você está adquirindo ${valor01}unidade(s) com valor unitário de ${valor02}
+    <p> Valor Total da compra: ${R$resultado} </p>
     `;
 
 };
@@ -37,13 +37,10 @@ function desconto() {
     const resultado = document.getElementById('resultado');
     resultado.innerHTML =
         `
-    <h2>Total do desconto</h2>
+    <h2>Desconto Aplicado</h2>
     <ul>
-        <p>DESCONTO </p>
-        <p>Valor 01: ${valor01}</p>
-        <p>Porcentagem de desconto: ${valor02}%</p>
-        <p>Valor do desconto: ${desconto}</p>
-        <p>Valor final: ${total}</p>
+        <li>Foi aplicado um desconto de ${valor02} sobre o valor de ${R$valor01} </li>
+        <li>Valor final com desconto: ${desconto}</li>
     </ul>
     `
 };
@@ -60,13 +57,10 @@ function juros() {
     const resultado = document.getElementById('resultado');
     resultado.innerHTML =
         `
-        <h2>Total do Juros</h2>
+        <h2>Acréscimo Aplicado</h2>
         <ul>
-            <li>JUROS</p>
-            <li>Valor 01: ${valor01}</li>
-            <li>Valor 02: ${valor02}</li>
-            <li>Valor do juros ${acrescimo}</li>
-            <li>Valor final: ${total}</li>
+            <li>Foi aplicado um acréscimo de ${valor02} sobre o valor de ${valor01}</li>
+            <li>Valor final com juros: ${juros}</li>
         </ul>
         `;
 };
@@ -92,7 +86,7 @@ function comissao() {
         <h2>Comissão calculada</h2>
         <ul>
             <li>Comissão de ${valor02} sobre uma venda de ${valor01}</li>
-            <h2>Valor da comissão: ${comissao}</h2>
+            <l1>Valor da comissão: ${comissao}</l1>
         </ul>
         `
     };
@@ -111,12 +105,10 @@ function lucro(){
     const resultado = document.getElementById('resultado');
     resultado.innerHTML = 
     `
-    <h2>Total lucro obtido</h2>
+    <h2>Lucro Obtido</h2>
     <ul>
-        <li>LUCRO</li>
-        <li>Valor 01: ${valor01}</li>
-        <li>Valor 02: ${valor02}</li>
-        <li>Valor final: ${lucro}</li>
+        <li>Preço de venda: ${valor01} | Custo: ${valor02}</li>
+        <li>Resultado financeiro: ${lucro}}</li>
     </ul>
     `;
 
